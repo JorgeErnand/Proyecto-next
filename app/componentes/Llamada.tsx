@@ -147,11 +147,11 @@ export default function Llamada(){
     return (
       <div className="min-h-screen bg-gray-100 p-4">
         
-        <div className="bg-gray-200 rounded-lg p-4 mb-6 shadow-md">
+        <div className=" flex justify-center bg-gray-200 rounded-lg p-4 mb-6 shadow-md">
           <div className="flex justify-center items-center space-x-4">
             <input 
               placeholder="Pokemon name ..." 
-              className="rounded-lg border-2 border-gray-300 text-center p-2 w-64 focus:outline-none focus:border-blue-500"
+              className="rounded-lg border-2 border-gray-300 text-center p-2 w-full sm:w-64 focus:outline-none focus:border-blue-500"
               value={pokemon}
               onChange={actualizarInput}
             />
@@ -163,7 +163,7 @@ export default function Llamada(){
             </button>
             <button 
               onClick={Add} 
-              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200 disabled:bg-gray-400"
+              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200 disabled:bg-gray-400 w-full sm:w-auto"
               disabled={!data} 
             >
               Add to Team
